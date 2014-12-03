@@ -1,4 +1,4 @@
-/* line 5, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,116 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p545/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 8, ../sass/style.scss */
+body {
+  width: 100%;
+  height: 10000px;
+  font-size: 62.5%;
+  margin: 5px auto;
+  text-align: center;
+  background-color: #e49e61;
+  color: #6c3524;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 22, ../sass/style.scss */
+header img {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 28, ../sass/style.scss */
+.personal-info {
+  width: 100%;
+  height: 150px;
+  margin: 2px auto;
+  position: relative;
+  font-size: 3em;
+  text-align: right;
+  background-color: #ffba67;
+}
+/* line 37, ../sass/style.scss */
+.personal-info .avatar {
+  height: 93%;
+  width: 10%;
+  position: absolute;
+  top: -80px;
+  right: 20px;
+  padding: 5px;
+  border-radius: 10%;
+  background-color: #ffba67;
+  border: 1px solid #e49e61;
+}
+/* line 49, ../sass/style.scss */
+.personal-info .user-name {
+  padding: 40px 14% 0 0;
+  font-weight: bold;
+}
+/* line 54, ../sass/style.scss */
+.personal-info .information {
+  position: absolute;
+  top: 100px;
+  right: 12%;
+}
+/* line 61, ../sass/style.scss */
+.personal-info .collections {
+  width: 40%;
+  height: 76%;
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #e49e61;
+}
+/* line 71, ../sass/style.scss */
+.personal-info .collections img {
+  width: 23%;
+  height: 89%;
+  margin: 6px 0;
+  display: inline-block;
+  border-radius: 5px;
 }

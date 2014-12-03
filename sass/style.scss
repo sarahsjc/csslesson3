@@ -1,2 +1,79 @@
 @import "compass/reset";
 @import "compass/css3";
+
+$text-color: #6c3524;
+$background-color: #e49e61;
+$personal-info-background: #ffba67;
+
+body {
+  //  width: 1400px;
+  width: 100%;
+  //  height: 100%;
+  height: 10000px;
+  font-size: 62.5%;
+  margin: 5px auto;
+  text-align: center;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+.personal-info {
+  width: 100%;
+  height: 150px;
+  margin: 2px auto;
+  position: relative;
+  font-size: 3em;
+  text-align: right;
+  background-color: $personal-info-background;
+
+  .avatar {
+    height: 93%;
+    width: 10%;
+    position: absolute;
+    top: -80px;
+    right: 20px;
+    padding: 5px;
+    border-radius: 10%;
+    background-color: $personal-info-background;
+    border: 1px solid $background-color;
+  }
+
+  .user-name {
+    padding: 40px 14% 0 0;
+    font-weight: bold;
+  }
+
+  .information {
+    position: absolute;
+    top: 100px;
+    right: 12%;
+
+  }
+
+  .collections {
+    width: 40%;
+    height: 76%;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: $background-color;
+
+    img {
+      width: 23%;
+      height: 89%;
+      margin: 6px 0;
+      display: inline-block;
+      border-radius: 5px;
+    }
+  }
+}
