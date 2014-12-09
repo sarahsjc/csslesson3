@@ -63,73 +63,103 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 8, ../sass/style.scss */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 17, ../sass/style.scss */
 body {
   width: 100%;
-  height: 10000px;
+  height: 2600px;
   font-size: 62.5%;
   margin: 5px auto;
   text-align: center;
-  background-color: #e49e61;
-  color: #6c3524;
+  background-color: #214686;
+  color: #bbc8e6;
   font-family: 'Roboto', sans-serif;
 }
-
-/* line 22, ../sass/style.scss */
-header img {
-  width: 100%;
-  height: 400px;
+/* line 27, ../sass/style.scss */
+body header {
+  background-color: #507ea4;
+  padding: 300px 0;
+  z-index: 1;
+  position: relative;
 }
-
-/* line 28, ../sass/style.scss */
-.personal-info {
+/* line 33, ../sass/style.scss */
+body header:after {
+  display: block;
+  content: "";
+  opacity: .6;
+  background: url("../resources/header.jpg");
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 150px;
+  height: 100%;
+}
+/* line 48, ../sass/style.scss */
+body .personal-info {
+  width: 100%;
+  height: 230px;
   margin: 2px auto;
   position: relative;
   font-size: 3em;
   text-align: right;
-  background-color: #ffba67;
 }
-/* line 37, ../sass/style.scss */
-.personal-info .avatar {
-  height: 93%;
-  width: 10%;
+/* line 56, ../sass/style.scss */
+body .personal-info .collections {
+  width: 100%;
   position: absolute;
-  top: -80px;
-  right: 20px;
-  padding: 5px;
-  border-radius: 10%;
-  background-color: #ffba67;
-  border: 1px solid #e49e61;
-}
-/* line 49, ../sass/style.scss */
-.personal-info .user-name {
-  padding: 40px 14% 0 0;
-  font-weight: bold;
-}
-/* line 54, ../sass/style.scss */
-.personal-info .information {
-  position: absolute;
-  top: 100px;
-  right: 12%;
-}
-/* line 61, ../sass/style.scss */
-.personal-info .collections {
-  width: 40%;
-  height: 76%;
-  position: absolute;
-  top: 15px;
-  left: 30px;
+  top: -240%;
+  left: -10px;
+  z-index: 2;
   text-align: center;
-  border-radius: 5px;
-  background-color: #e49e61;
+  color: #594255;
+}
+/* line 65, ../sass/style.scss */
+body .personal-info .collections li {
+  display: inline-block;
+  width: 10%;
+  margin: 5px 5%;
+  position: relative;
 }
 /* line 71, ../sass/style.scss */
-.personal-info .collections img {
-  width: 23%;
-  height: 89%;
-  margin: 6px 0;
-  display: inline-block;
-  border-radius: 5px;
+body .personal-info .collections li img {
+  width: 100%;
+  opacity: 0.6;
+  transition: all .5s ease-in-out;
+  border-radius: 100%;
+}
+/* line 78, ../sass/style.scss */
+body .personal-info .collections li p {
+  font-size: 50%;
+  position: absolute;
+  width: 60%;
+  top: -5%;
+  left: 55%;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+/* line 89, ../sass/style.scss */
+body .personal-info .collections li:first-child p {
+  left: -20px;
+}
+/* line 95, ../sass/style.scss */
+body .personal-info .collections li:hover img {
+  transform: scale(1.8);
+  opacity: 1;
+}
+/* line 100, ../sass/style.scss */
+body .personal-info .collections li:hover p {
+  display: block;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-delay: 0s;
 }

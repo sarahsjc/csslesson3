@@ -8,30 +8,73 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
+    <script src="vendors/jquery.easings.min.js"></script>
+
+    <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
 </head>
 <body>
-    <header>
-        <img src="resources/header.jpg"/>
-    </header>
+<header>
+</header>
 
-    <section class="personal-info">
-        <img class="avatar" src="resources/fox_avatar.jpg"/>
-        <h4 class="user-name">小狐狸</h4>
+<section class="personal-info">
 
-        <section class="collections">
-            <img src="resources/collection-1.jpg" />
-            <img src="resources/collection-2.jpg" />
-            <img src="resources/collection-3.jpg" />
-            <img src="resources/collection-4.jpg" />
-        </section>
-        <section class="information">
-            如果你要驯服一个人，就要冒着掉眼泪的危险。
-        </section>
+    <ul class="collections">
+        <li>
+            <img src="resources/collection-1.jpg"/>
+            <p>如果你要驯服一个人，就要冒着掉眼泪的危险。——小狐狸</p>
+        </li>
+        <li>
+            <img src="resources/collection-2.jpg"/>
+            <p>人不应该听花说些什么，只要欣赏她们，闻闻花就够了。——玫瑰花</p>
+        </li>
+        <li>
+            <img src="resources/collection-3.jpg"/>
+            <p>星星发亮是为了让每一个人有一天都能找到属于自己的星星。——小王子</p>
+        </li>
+    </ul>
 
-    </section>
-    <section class="time-line"></section>
-    <section class="footer">
 
-    </section>
+</section>
+<section id="fullpage">
+    <article class="section">
+        <p></p>
+        <img src="resources/story1.jpg"/>
+    </article>
+    <article class="section">
+        <p></p>
+        <img src="resources/story2.jpg"/>
+    </article>
+    <article class="section">
+        <p></p>
+        <img src="resources/story3.jpg"/>
+    </article>
+    <article class="section">
+        <p></p>
+        <img src="resources/story4.jpg"/>
+    </article>
+    <article class="section">
+        <p></p>
+        <img src="resources/story5.jpg"/>
+    </article>
+</section>
+
+
+<section class="footer">
+</section>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage();
+    });
+</script>
 </body>
 </html>
