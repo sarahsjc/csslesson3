@@ -9,72 +9,193 @@
     <![endif]-->
     <link href="stylesheets/style.css" type="text/css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css"/>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <!-- This following line is needed only in case of using other easing effect rather than "linear", "swing" or "easeInQuart". You can also add the full jQuery UI instead of this file if you prefer -->
-    <script src="vendors/jquery.easings.min.js"></script>
+    <script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
 
     <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
-    <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
 
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#214686', '#a69425', '#69821b', '#0f2350', '#4d4398','#74325c'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage','5thpage','lastPage'],
+                menu: '#menu'
+            });
+        });
+    </script>
 </head>
 <body>
-<header>
-</header>
 
-<section class="personal-info">
+<ul id="menu">
+    <li data-menuanchor="firstPage"><a href="#firstPage">小王子和他的朋友</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">什么叫“驯服”呢？</a></li>
+    <li data-menuanchor="3rdPage"><a href="#3rdPage">请驯服我吧！</a></li>
+    <li data-menuanchor="4thpage"><a href="#4thpage">我一定会哭的……</a></li>
+    <li data-menuanchor="5thpage"><a href="#5thpage">独一无二的狐狸</a></li>
+    <li data-menuanchor="lastPage"><a href="#lastPage">再见了</a></li>
+</ul>
 
-    <ul class="collections">
-        <li>
-            <img src="resources/collection-1.jpg"/>
-            <p>如果你要驯服一个人，就要冒着掉眼泪的危险。——小狐狸</p>
-        </li>
-        <li>
-            <img src="resources/collection-2.jpg"/>
-            <p>人不应该听花说些什么，只要欣赏她们，闻闻花就够了。——玫瑰花</p>
-        </li>
-        <li>
-            <img src="resources/collection-3.jpg"/>
-            <p>星星发亮是为了让每一个人有一天都能找到属于自己的星星。——小王子</p>
-        </li>
-    </ul>
-
-
-</section>
 <section id="fullpage">
-    <article class="section">
-        <p></p>
-        <img src="resources/story1.jpg"/>
+    <section class="section" id="header">
+        <ul class="collections">
+            <li>
+                <img src="resources/collection-1.jpg"/>
+
+                <p>如果你要驯服一个人，就要冒着掉眼泪的危险。——小狐狸</p>
+            </li>
+            <li>
+                <img src="resources/collection-2.jpg"/>
+
+                <p>人不应该听花说些什么，只要欣赏她们，闻闻花就够了。——玫瑰花</p>
+            </li>
+            <li>
+                <img src="resources/collection-3.jpg"/>
+
+                <p>星星发亮是为了让每一个人有一天都能找到属于自己的星星。——小王子</p>
+            </li>
+        </ul>
+    </section>
+
+    <article class="section" id="day1">
+        <ul>
+            <li>
+                <section class="story">
+                    <p class="prince">- 什么叫‘驯服’呢？</p>
+
+                    <p class="fox">- 这是已经早就被人遗忘了的事情，它的意思就是‘建立联系’。</p>
+
+                    <p class="prince">- 建立联系？</p>
+
+                    <p class="fox">-一点不错，对我来说，你还只是一个小男孩，就像其他千万 个小男孩一样。我不需要你。你也同样用不着我。对你来说，我也不过是一只狐
+                        狸，和其他千万只狐狸一样。但是，如果你驯服了我，我们就互相不可缺少了。
+                        对我来说，你就是世界上唯一的了；我对你来说，也是
+
+                    <p class=" fox accent">世界上唯一的了。</p></p>
+
+                    <p class="prince">- 我有点明白了。有一朵花……，我想，她把我驯服了……</p>
+
+                    <p class="fox">- 这是可能的。世界上什么样的事都可能看到……</p>
+                </section>
+            </li>
+            <li>
+                <img src="resources/story1.jpg"/>
+            </li>
+        </ul>
     </article>
-    <article class="section">
-        <p></p>
-        <img src="resources/story2.jpg"/>
+    <article class="section" id="day2">
+        <ul>
+            <li>
+                <section class="story">
+                    <p class="fox">-
+                        如果你要是驯服了我，我的生活就一定会是欢快的。你的脚步声就会象音乐一样让我从洞里走出来。你有着金黄色的头发。那么，一旦你驯服了我，这就会十分美妙。麦子，是金黄色的，它就会使我想起你。而且，我甚至会
+                        喜欢那风吹麦浪的声音……</p>
+
+                    <p class="fox accent">请你驯服我吧！</p>
+
+                    <p class="prince">- 我是很愿意的。可我的时间不多了。我还要去寻找朋友，还有许多事物要了解。</p>
+
+                    <p class="fox"> - 只有被驯服了的事物，才会被了解。如果你想要一个朋友，那就驯服我吧！</p>
+
+                    <p class="prince">- 那么应当做些什么呢？</p>
+
+                    <p class="fox">- 应当非常耐心。开始你就这样坐在草丛中，坐得离我稍微远些。我用眼角瞅着你，你什么也不要说。每天，
+                        你坐得靠我更近些……你下午四点钟来，那么从三点钟起，我就开始感到幸福。到了四点
+                        钟的时候，我就会坐立不安；我就会发现幸福的代价。应当有一定的仪式。</p>
+
+                    <p class="prince">- 仪式是什么？</p>
+
+                    <p class="fox">- 这也是一种早已被人忘却了的事。它就是使某一天与其他日 子不同，使某一时刻与其他时刻不同。</p>
+                </section>
+            </li>
+            <li>
+                <img src="resources/story3.jpg"/>
+            </li>
+        </ul>
     </article>
-    <article class="section">
-        <p></p>
-        <img src="resources/story3.jpg"/>
+    <article class="section" id="day3">
+
+        <ul>
+            <li>
+                <section class="story">
+                    <p>就这样，小王子驯服了狐狸。当出发的时刻就快要来到时：</p>
+
+                    <p class="fox">- 啊！我一定会哭的。</p>
+
+                    <p class="prince">- 这是你的过错，我本来并不想给你任何痛苦，可你却要我驯服你……</p>
+
+                    <p class="fox">- 是这样的。</p>
+
+                    <p class="prince">- 你可就要哭了！</p>
+
+                    <p class="fox">- 当然罗。</p>
+
+                    <p class="prince">- 那么你什么好处也没得到。</p>
+
+                    <p class="fox">- 由于麦子颜色的缘故，我还是得到了好处。</p>
+                </section>
+            </li>
+            <li>
+                <img src="resources/story2.jpg"/>
+            </li>
+        </ul>
+
+
     </article>
-    <article class="section">
-        <p></p>
-        <img src="resources/story4.jpg"/>
+    <article class="section" id="day4">
+        <ul>
+            <li>
+                <section class="story">
+                    <P class="fox">- 再去看看那些玫瑰花吧。你一定会明白，你的那朵是世界上独一无二的玫 瑰。你回来和我告别时，我再赠送给你一个秘密。</P>
+
+
+                    <P class="prince">- 你们就象我的狐狸过去那样，它那时只是和千万只别的狐狸一样的一只狐狸。但是，我现在已经把它当成了我
+                        的朋友，于是它现在就是世界上独一无二的了。
+                        我的那朵玫瑰花，她单独一朵就比你们全体更重要，因为她是我浇灌的。因为她是我放在花罩中的。
+                        因为她是我用屏风保护起来的。因为我倾听过她的怨艾和自诩，甚至有时我聆听着她的沉默。 因为她是我的玫瑰。</P>
+
+                </section>
+            </li>
+            <li>
+                <img src="resources/story4.jpg"/>
+            </li>
+        </ul>
     </article>
-    <article class="section">
-        <p></p>
-        <img src="resources/story5.jpg"/>
+    <article class="section" id="day5">
+
+        <ul>
+            <li>
+                <section class="story">
+                    <P class="prince">- 再见了。</P>
+
+                    <P class="fox">- 再见。喏，这就是我的秘密。很简单：只有用心才能看得清。 实质性的东西，用眼睛是看不见的。</P>
+
+                    <P class="prince">- 实质性的东西，用眼睛是看不见的。</P>
+
+                    <P class="fox">- 正因为你为你的玫瑰花费了时间，这才使你的玫瑰变得如此重要。</P>
+
+                    <P class="prince">- 正因为你为你的玫瑰花费了时间……</P>
+
+                    <P class="fox">- 人们已经忘记了这个道理，可是，你不应该忘记它。你现在 要对你驯服过的一切负责到底。你要对你的玫瑰负责……</P>
+
+                    <P class="prince">- 我要对我的玫瑰负责……</P>
+                </section>
+            </li>
+            <li>
+                <img src="resources/story5.jpg"/>
+            </li>
+        </ul>
     </article>
 </section>
 
 
 <section class="footer">
 </section>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage();
-    });
-</script>
 </body>
 </html>
